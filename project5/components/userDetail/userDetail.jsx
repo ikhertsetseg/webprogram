@@ -37,7 +37,13 @@ class UserDetail extends React.Component {
   }
   render() {
     return (
+      
       <div className="card">
+        <Link to={"/photos/" + this.state.userId}>
+          <Button  class =" button" variant="outlined" color="primary">
+           Picture
+          </Button>
+        </Link>
         <Typography variant="h5">
           {this.state.userDetail.first_name} {this.state.userDetail.last_name}
         </Typography>
@@ -50,11 +56,7 @@ class UserDetail extends React.Component {
         <div className="loc item">
           Location: {this.state.userDetail.location}
         </div>
-        <Link to={"/photos/" + this.state.userId}>
-          <Button variant="outlined" color="primary">
-            View Pictures
-          </Button>
-        </Link>
+        
       </div>
     );
   }

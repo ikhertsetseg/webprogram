@@ -20,7 +20,7 @@ const Card = (props) => {
         <div>
           <div onClick={() => setFlag(!flag)}>Comments</div>
           {!props.data.comments ? (
-            <div style={{ display: flag ? "block" : "none" }}>No comment</div>
+            <div style={{ display: flag ? "block" : "none" }}> no comment</div>
           ) : (
             props.data.comments.map((el, ind) => {
               return (

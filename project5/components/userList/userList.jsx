@@ -36,7 +36,7 @@ class UserList extends React.Component {
       // <div>
       <List component="nav" className="userList">
         <Typography variant="h6" align="center">
-          PHOTO APP
+          USER
         </Typography>
         {this.state.userListModel.map((el) => {
           return (
