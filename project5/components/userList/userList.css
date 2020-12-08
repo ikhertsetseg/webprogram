@@ -1,0 +1,8 @@
+.userList a {
+  text-decoration: none;
+}
+.userList .MuiTypography-displayBlock {
+  margin-left: 10px;
+  color: rgb(13, 8, 41);
+  border: 1 px solid;
+}
