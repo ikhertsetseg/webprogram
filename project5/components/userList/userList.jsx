@@ -43,10 +43,7 @@ class UserList extends React.Component {
             <React.Fragment key={el._id}>
               <Link to={"/users/" + el._id}>
                 <ListItem>
-                  <Avatar color="purple">
-                    {el.first_name.charAt(0)}
-                    {el.last_name.charAt(0)}
-                  </Avatar>
+                  
                   <ListItemText>
                     {el.first_name + "  "}
                     {el.last_name}
